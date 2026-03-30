@@ -1,0 +1,10 @@
+DECLARE n1 : REAL
+INPUT n1
+
+DECLARE n2 : REAL
+INPUT n2
+
+DECLARE soma 
+soma <- n1 + n2
+
+OUTPUT "A soma de " + n1 + " e " + n2 + " é igual a: " + soma

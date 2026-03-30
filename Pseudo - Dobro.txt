@@ -1,0 +1,7 @@
+DECLARE n1 : INT
+INPUT n1
+
+DECLARE dobro
+dobro <- n1 * 2
+
+OUTPUT "O dobro de " + n1 + " é: " + dobro

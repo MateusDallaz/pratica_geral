@@ -1,0 +1,24 @@
+DECLARE n1 : REAL
+INPUT n1 
+
+DECLARE n2 : REAL
+INPUT n2
+
+DECLARE n3 : REAL
+INPUT n3
+
+OUTPUT "Suas notas são: " + n1 + ", " + n2 + " e " + n3 
+
+DECLARE media : REAL
+media <- (n1 + n2 + n3)/3 
+OUTPUT "Sua média é: " + media
+
+IF media ≥ 7 THEN
+  OUTPUT "Parabéns, você foi aprovado"
+ENDIF
+IF media ≥ 5 and media < 7 THEN
+  OUTPUT "Cuidado, você está em recuperação"
+ENDIF
+IF media < 5 THEN
+  OUTPUT "Infelizmete você foi reprovado"
+ENDIF

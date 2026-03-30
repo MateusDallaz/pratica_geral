@@ -1,0 +1,7 @@
+DECLARE idade : INT
+INPUT idade
+
+DECLARE dias
+dias <- idade * 365
+
+OUTPUT "Meus parabéns, você tem aproximadamente " + dias + " dias vividos!"

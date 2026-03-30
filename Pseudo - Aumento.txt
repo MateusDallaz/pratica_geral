@@ -1,0 +1,7 @@
+DECLARE salario : REAL
+INPUT salario
+
+DECLARE aumento : REAL
+aumento <- salario * 1.10
+
+OUTPUT "O seu novo salario é de: " + aumento

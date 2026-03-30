@@ -1,0 +1,8 @@
+DECLARE n : INT
+INPUT n 
+
+IF n > 10 THEN 
+  OUTPUT n + " é maior que 10"
+ELSE 
+  OUTPUT n + " é menor que 10" 
+ENDIF

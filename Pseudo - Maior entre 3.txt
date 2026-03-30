@@ -1,0 +1,18 @@
+DECLARE n1 : INT
+INPUT n1 
+
+DECLARE n2 : INT
+INPUT n2
+
+DECLARE n3 : INT
+INPUT n3
+
+IF n1 > n2 and n1 > n3 THEN
+  OUTPUT n1 + " e maior que " + n2 + " e " + n3
+ENDIF
+IF n2 > n1 and n2 > n3 THEN
+  OUTPUT n2 + " e maior que " + n1 + " e " + n3
+ENDIF
+IF n3 > n2 and n3 > n1 THEN
+  OUTPUT n3 + " e maior que " + n1 + " e " + n2
+ENDIF

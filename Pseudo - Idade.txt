@@ -1,0 +1,12 @@
+DECLARE idade : INT
+INPUT idade
+
+IF idade ≤ 12 THEN
+  OUTPUT "você é criança"
+ENDIF
+IF idade > 12 and idade < 21 THEN
+  OUTPUT "você é adolecente"
+ENDIF
+IF idade ≥ 21 THEN
+  OUTPUT "você é adulto"
+ENDIF

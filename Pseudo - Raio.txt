@@ -1,0 +1,10 @@
+DECLARE raio : REAL
+INPUT raio
+
+DECLARE pi : REAL 
+pi ← 3.14159265359
+
+DECLARE area : REAL
+area <- pi * (raio*raio)
+
+OUTPUT "Área: " + area
