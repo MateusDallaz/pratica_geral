@@ -1,0 +1,27 @@
+aluno = {
+    'nome': None,
+    'nota1': None,
+    'nota2': None,
+    'nota3': None
+ };
+
+def mediaFinal():
+    return aluno['nome'] is not None;
+    
+def cadastroAluno():
+    print('--- Cadastro do Aluno --- \n');
+    aluno['nome'] = input('Digite o nome do aluno: ');
+    aluno['nota1'] = float(input('Digite a 1ª nota: '));
+    aluno['nota2'] = float(input('Digite a 2ª nota: '));
+    aluno['nota3'] = float(input('Digite a 3ª nota: '));
+    print('\n--- Aluno cadastrado com sucesso! ---\n ');
+    
+def mostrarAluno():
+    print('--- Alunos Cadastrados ---\n');
+    if not mediaFinal():
+        print('Nenhum aluno cadastrado.\n');
+    else:
+        print(f"Nome: {aluno['nome']}");
+        print(f"1ª Nota: {aluno['nota1']}");
+        print(f"2ª Nota: {aluno['nota2']}");
+        print(f"3ª Nota: {aluno['nota3']}");
