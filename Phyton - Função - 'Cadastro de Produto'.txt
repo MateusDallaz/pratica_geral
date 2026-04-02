@@ -19,9 +19,9 @@ def mostrarProduto():
     if not produtoCadastrado():
         print('Nenhum produto cadastrado.\n');
     else:
-        print(f'Nome: {produto['nome']}');
-        print(f'Preço: R${produto['preco']}');
-        print(f'Estoque: {produto['quantidade']} unidades\n');
+        print(f"Nome: {produto['nome']}");
+        print(f"Preço: R${produto['preco']}");
+        print(f"Estoque: {produto['quantidade']} unidades\n");
         
 def verificarEstoque():
     print('--- Estoque ---\n');
@@ -29,9 +29,9 @@ def verificarEstoque():
         print('Nenhum produto cadastrado.\n');
     else:
         if produto['quantidade'] > 0:
-            print(f'O estoque do produto {produto['nome']} é de {produto['quantidade']}\n');
+            print(f"O estoque do produto {produto['nome']} é de {produto['quantidade']}\n");
         else:
-            print(f'O produto {produto['nome']} está sem estoque');
+            print(f"O produto {produto['nome']} está sem estoque\n");
 def atualizarProduto():
     print('--- Atualização de Produto ---\n');
     if not produtoCadastrado():
