@@ -62,6 +62,7 @@ def menu():
         elif opcao == '4':
             atualizarDados();
         elif opcao == '5':
+            print('\n Até a próixima!');
             break;
         else:
             print('\n--- Por gentileza digite uma opção valida ---\n');
