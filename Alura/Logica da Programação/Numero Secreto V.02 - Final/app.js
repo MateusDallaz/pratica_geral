@@ -3,17 +3,20 @@
 
 //let paragrafo = document.querySelector("p");
 //paragrafo.innerHTML = "Escolha um número entre 1 e 1000";
+let listaSorteados = [];
+let numeroLimite = 10;
 let numeroSecreto = numeroAleatorio();
 let tentativas = 1;
 
 function exibirTexto(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial(){
     exibirTexto('h1', 'Jogo do Número Secreto');
-    exibirTexto('p', 'Escolha um número entre 1 e 1000');
+    exibirTexto('p', `Escolha um número entre 1 e ${numeroLimite}`);
 }
 
 exibirMensagemInicial();
@@ -41,7 +44,18 @@ function verificarChute() {
 }
 
 function numeroAleatorio() {
-    return parseInt(Math.random() * 1000 + 1);
+    let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
+    let quantdadeElementosLista = listaSorteados.length;
+    if (quantdadeElementosLista == numeroLimite){
+        listaSorteados = [];
+    }
+    if (listaSorteados.includes(numeroEscolhido)) {
+        return numeroAleatorio();
+    } else{
+        listaSorteados.push(numeroEscolhido);
+        console.log(listaSorteados);
+        return numeroEscolhido;
+    }
 }
 
 function limparCampo() {
