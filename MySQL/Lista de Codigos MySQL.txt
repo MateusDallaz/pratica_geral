@@ -1,0 +1,31 @@
+CREATE DATABASE  nome do banco de dados tudo junto e em letra minuscula (usado para criar um databse)
+
+USE nome do banco de dados tudo junto e em letra minuscula (seleciona a database)
+
+CREATE TABLE  nome da tabela(
+    atributos e tipo
+)
+
+DESCRIBE nome da tabela 
+
+CRIATE TABLE nome da tabela(
+    CONSTRAINT fknome_da_chave_estrangeira FOREIGN KEY
+    (atributo) REFERENCES tabela_estrangeira(atributo)
+)
+
+INSERT INTO nome da tablea (todos os atributos separados por ,)
+                    Values (os valores na mesma ordem dos atributos separados por virgula)
+
+SELECT * FROM nome da tabela (mostra os valores inseridos em cada atributo)
+
+AUTO_INCREMENT (será preenchido automaticamente)
+
+DELETE FROM nome da tabela;
+
+SET SQL_SAFE_UPDATES =0;
+
+DROP TABLE nome da tabela;
+
+data_log TIMESTAMP DEFAULT CURRENT_TIMESTAMP (puxa direto a data e hora de registro, utilizando como padrão o horario do servidor)
+
+DELETE FROM clientes WHERE id = 3; (para deletar um rtegistro dentro da tabela, precisa do WHERE para identificar qual registro deletar)
