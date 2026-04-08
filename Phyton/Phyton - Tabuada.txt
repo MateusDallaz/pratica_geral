@@ -1,0 +1,8 @@
+numero = int(input('Digite um numero: '));
+
+multiplicador = 0;
+
+while multiplicador != 10:
+    multiplicador += 1;
+    resultado = numero * multiplicador;
+    print(f'{multiplicador} * {numero} = {resultado}');
