@@ -1,0 +1,64 @@
+turma = [[nome, materia, serie, nota1, nota2]]
+
+def cadastro():
+    print('--- Cadastro de Turma ---\n')
+    
+    nomealuno = input('Digite o nome do aluno: ')
+    materia = input('Digite a materia: ')
+    serie = input('Digite a serie: ')
+    
+    turma.append([nomealuno, materia, serie, None, None])
+    
+    print('\nCadastro realizado com sucesso\n')
+
+def mostrarDados():
+    print('\n--- Cadastros ---\n')
+    
+    if turma == []:
+        print('Nenhum cadastro encontrado\n')
+    else:
+        for i, c in enumerate(turma, start=1):
+            print(f'{i} - Nome: {c[0]} | Matéria: {c[1]} | Série: {c[2]} | Nota1: {c[3]} | Nota2: {c[4]}')
+            
+def notas():
+    print('\n--- Cadastro de Notas ---\n')
+    
+    if turma == []:
+        print('Nenhum aluno cadastrado\n')
+    else:
+        mostrarDados()
+        
+        indice = int(input('Escolha o aluno: ')) - 1
+        
+        if 0 <= indice < len(turma):
+            nota1 = float(input('Digite a 1ª nota: '))
+            nota2 = float(input('Digite a 2ª nota: '))
+            
+            turma[indice][3] = nota1
+            turma[indice][4] = nota2
+            
+            print('\nNotas cadastradas!\n')
+        else:
+            print('Índice inválido\n')
+            
+def media():
+    print('\n--- Cálculo de Média ---\n')
+    
+    if turma == []:
+        print('Nenhum aluno cadastrado\n')
+    else:
+        mostrarDados()
+        
+        indice = int(input('Escolha o aluno: ')) - 1
+        
+        if 0 <= indice < len(turma):
+            nota1 = turma[indice][3]
+            nota2 = turma[indice][4]
+            
+            if nota1 is None or nota2 is None:
+                print('Notas ainda não cadastradas\n')
+            else:
+                media = (nota1 + nota2) / 2
+                print(f'Média: {media:.2f}\n')
+        else:
+            print('Índice inválido\n')

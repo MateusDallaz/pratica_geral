@@ -1,7 +1,7 @@
 let n = parseInt(prompt('Digite um número '));
 
 function fatorial(n) {
-    if (n  0) {
+    if (n = 0) {
         return 'Não existe fatorial de número negativo';
     }
 
@@ -15,7 +15,7 @@ function fatorial(n) {
 }
 
 if (isNaN(n)) {
-    console.log(Digite um número válido!);
+    console.log('Digite um número válido!');
 } else {
     let resultado = fatorial(n);
     console.log(`O fatorial de ${n} é ${resultado}`);
