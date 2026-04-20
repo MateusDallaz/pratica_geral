@@ -130,3 +130,17 @@ print(f'O total de números pares foi de {par} e os impares foi {impar}')
 
 #Exercicio 17:
 
+multi = 1
+
+for i in range(1, 6):
+    num = int(input('Digite um número: '))
+    multi *= num
+    
+print(f'A multiplicação final ficou: {multi}')
+
+#Exercicio 18:
+
+nome = input('Digite seu nome: ')
+
+for letra in nome:
+    print(letra)
