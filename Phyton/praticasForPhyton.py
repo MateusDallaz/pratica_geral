@@ -115,3 +115,18 @@ for i in range(1, 11):
 print(f'Os numeros positivos são: {positivos}')
 
 #Exercicio 16:
+
+par = 0
+impar = 0
+
+for i in range(1, 11):
+    numero = int(input('Digite um número: '))
+    if numero %2 == 0:
+        par += 1
+    else:
+        impar += 1
+
+print(f'O total de números pares foi de {par} e os impares foi {impar}')
+
+#Exercicio 17:
+
