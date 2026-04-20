@@ -211,4 +211,31 @@ for i in range(1, 11):
     if maior == 0 or numero > maior:
         maior = numero
     
-print(maior)
+print(f'O maior número digitado foi: {maior}')
+
+#Exercicio 25:
+
+lista = [1, 2, 5, 7, 3, 2, 9, 3, 8, 2, 6, 6, 9, 2, 5]
+procurado = int(input('Digite o numero procurado (ente 1 e 10): '))
+contador = 0 
+
+for numero in lista:
+    if numero == procurado:
+        contador += 1
+
+if contador > 0:
+    print(f'O número {procurado} apareceu {contador} vezes')
+else:
+    print(f'O número {procurado} não está na lista')
+
+#Exercicio 26:
+
+numero = int(input('Digite um número: '))
+fatorial = 1
+
+for i in range(1, numero + 1):
+    print(f"{fatorial} x {i} = {fatorial * i}")
+    fatorial = fatorial * i
+    
+print(f"\nO resultado final é: {fatorial}")
+
