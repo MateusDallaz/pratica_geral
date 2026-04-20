@@ -92,3 +92,26 @@ for i in range(1, 6):
         maior = numero
         
 print(f'O maior número digitado foi: {maior}')
+
+#Exercicio 14:
+
+menor = 0
+
+for i in range(1, 6):
+    numero = int(input('Digite um número: '))
+    if menor == 0 or numero < menor:
+        menor = numero
+        
+print(f'O maior número digitado foi: {menor}')
+
+#Exercicio  15:
+
+positivos = []
+for i in range(1, 11):
+    numero = int(input('Digite um número: '))
+    if numero %2 == 0:
+        positivos.append(numero)
+
+print(f'Os numeros positivos são: {positivos}')
+
+#Exercicio 16:
