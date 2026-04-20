@@ -166,3 +166,49 @@ for letra in palavra:
         contador +=1
         
 print(f'A quantidade de consoantes é: {contador}')
+
+#Exercicio 21:
+
+frase = input('Digite a frase: ')
+
+for caractere in frase:
+    print(caractere)
+
+#Exercicio 22: 
+
+lista = []
+soma = 0
+
+for numero in range(1, 6):
+    numero = int(input('Digite um número: '))
+    lista.append(numero)
+    soma += numero
+
+print(f'A soma dos numeros {lista} é {soma}')
+
+#Exercicio 23:
+
+pares = []
+impares = []
+
+for i in range(1, 11):
+    numero = int(input('Digite um número: '))
+    if numero %2 == 0:
+        pares.append(numero)
+    else:
+        impares.append(numero)
+        
+print(f'Dentre os números digitados: {pares} são pares e {impares} são impares')
+
+#Exercicio 24:
+
+lista = []
+maior = 0
+
+for i in range(1, 11):
+    numero = int(input('Digite um número: '))
+    lista.append(numero)
+    if maior == 0 or numero > maior:
+        maior = numero
+    
+print(maior)
