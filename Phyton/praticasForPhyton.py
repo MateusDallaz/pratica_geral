@@ -144,3 +144,25 @@ nome = input('Digite seu nome: ')
 
 for letra in nome:
     print(letra)
+
+#Exercicio 19:
+
+palavra = input('Digite uma palavra: ').lower()
+contador = 0
+
+for letra in palavra:
+    if  letra in "aeiou":
+        contador +=1
+        
+print(f'A quantidade de vogais é: {contador}')
+
+#Exercicio 20:
+
+palavra = input('Digite uma palavra: ').lower()
+contador = 0
+
+for letra in palavra:
+    if  letra not in "aeiou":
+        contador +=1
+        
+print(f'A quantidade de consoantes é: {contador}')
