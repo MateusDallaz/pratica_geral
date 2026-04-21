@@ -239,3 +239,46 @@ for i in range(1, numero + 1):
     
 print(f"\nO resultado final é: {fatorial}")
 
+#Exercicio 27:
+
+numero = int(input('Digite um número: '))
+contador = 0
+
+for i in range(1, numero +1):
+    if numero % i == 0:
+        contador += 1
+
+if contador == 2:
+    print(f'\nO número {numero} é primo')
+else:
+    print(f'\nO número {numero} não é primo')
+
+#Exercicio 28:
+
+numero = int(input('Digite um número: '))
+contador = 0
+divisor = []
+
+for i in range(1, numero +1):
+    if numero % i == 0:
+        contador += 1
+        divisor.append(i)
+
+print(f'\nO número {numero} é dividido por {divisor}')
+if contador == 2:
+    print(f'E o número {numero} é primo')
+else:
+    print(f'E o número {numero} não é primo')
+
+#Exercicio 29:
+
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite um número maior que o anterior: '))
+soma = 0
+
+for i in range (n1, n2 + 1):
+    antes = soma
+    soma += i
+    print(f'\n{antes} + {i} = {soma}')
+
+print(f'\nO resultado da soma dos números entre {n1} e {n2} é: {soma}')
